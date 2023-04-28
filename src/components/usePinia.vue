@@ -1,14 +1,14 @@
 <template>
-     <div>{{ userStore.name }}</div>
+  <div>{{ userStore.name }}</div>
  </template>
 
- <script lang="ts" setup>
+<script lang="ts" setup>
 
-  import { useUserStore } from '@/store/user'
+import { useUserStore } from '@/store/user'
 
-   
-  const userStore = useUserStore()
-  // 修改
-  userStore.updateName('李四')
 
- </script>
+const userStore = useUserStore()
+// 修改
+userStore.updateName('李四11')
+
+</script>
