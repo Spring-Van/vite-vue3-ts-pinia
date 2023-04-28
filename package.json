@@ -18,6 +18,12 @@
       "path": "./node_modules/cz-customizable"
     }
   },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "npm run eslint",
+      "npm run prettier"
+    ]
+  },
   "dependencies": {
     "@vueuse/core": "^10.1.0",
     "axios": "^1.4.0",
@@ -37,9 +43,13 @@
     "consola": "^3.1.0",
     "cz-conventional-changelog": "^3.3.0",
     "cz-customizable": "^7.0.0",
+    "eslint": "8.12.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^3.0.0-alpha.7-for-vscode",
+    "eslint-plugin-vue": "8.5.0",
+    "husky": "7.0.4",
+    "lint-staged": "^13.2.2",
+    "prettier": "2.6.1",
     "sass": "^1.62.1",
     "typescript": "^5.0.2",
     "vite": "^4.3.2",

@@ -4,7 +4,7 @@
 </template>
 
 <script setup lang="ts">
-import useVueuse from '@/components/useVueuse.vue'
+import useVueuse from '@/components/useVueuse.vue';
 </script>
 
 <style lang="scss">

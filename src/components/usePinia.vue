@@ -1,14 +1,12 @@
 <template>
   <div>{{ userStore.name }}</div>
- </template>
+   
+</template>
 
 <script lang="ts" setup>
+import { useUserStore } from '@/store/user';
 
-import { useUserStore } from '@/store/user'
-
-
-const userStore = useUserStore()
+const userStore = useUserStore();
 // 修改
-userStore.updateName('李四11')
-
+userStore.updateName('李四11');
 </script>
